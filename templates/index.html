@@ -1,0 +1,100 @@
+
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'includes/head.html' %}
+
+<body>
+    <!-- Spinner Start -->
+    {% include 'includes/spinner.html' %}
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    {% include 'includes/topbar.html' %}
+
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    {% include 'includes/navbar.html' %}
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    {% include 'includes/carousel.html' %}
+
+    <!-- Carousel End -->
+
+
+
+
+
+    <!-- About Start -->
+    {% include 'includes/about.html' %}
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+   {% include 'includes/services.html' %}
+    <!-- Service End -->
+
+
+
+    <!-- Feature Start -->
+    {% include 'includes/feature.html' %}
+
+    <!-- Feature End -->
+
+
+    <!-- Project Start -->
+   {% include 'includes/project.html' %}
+    <!-- Project End -->
+
+
+      <!-- Video Section -->
+
+      {% include 'includes/video.html' %}
+
+
+    <!-- Appointment Start -->
+{% include 'includes/appointment.html' %}
+    <!-- Appointment End -->
+
+
+
+    <!-- Footer Start -->
+    {% include 'includes/footer.html' %}
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+    
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{%load static %}
+
+
+
+
+<!-- Video Section -->
+<div class="container py-5">
+    <h4 class=" text-center section-title">Tanıtım Videomuz</h4>
+    <h1 class="text-center mb-4 display-5 mb-4" >{{ video.title }}</h1>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="video-wrapper shadow-lg rounded overflow-hidden position-relative">
+                <!-- Video Player -->
+                <video controls class="w-100" style="border-radius: 8px;">
+                    <source src="{{ video.video.url }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <!-- Logo in the top right corner -->
+                <div class="logo-overlay">
+                    <img src="{{ video.logo.url }}" alt="Logo" class="logo-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

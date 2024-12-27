@@ -1,0 +1,45 @@
+{% load static %}
+<div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-light mb-4">İletişim</h3>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Köşklüçeime Mah. Gümüşpala Cd. No: 39 <br> Gebze/Kocaeli</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>(532)-559-4149</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>gonulinsaatgebze@gmail.com</p>
+                <div class="d-flex pt-2">
+                    {% for social in social_media_links %}
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="{{ social.url }}" target="_blank">
+                        <img src="{{ social.icon_image.url }}" alt="{{ social.name }}" style="width: 30px; height: 30px;">
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-light mb-4">Hizmetlerimiz</h3>
+                <a class="btn btn-link" href="">Mühendislik</a>
+                <a class="btn btn-link" href="">Mimarlık</a>
+                <a class="btn btn-link" href="">Gayrimenkul Danışmanlığı</a>
+                <a class="btn btn-link" href="">İç ve Dış Mekan Tasarımı</a>
+                <a class="btn btn-link" href="">Anahtar Teslim Proje</a>
+            </div>
+
+           
+            <div class="col-lg-3 col-md-6 d-block d-lg-none text-center">
+                <img src="{% get_media_prefix %}img/logo.png" alt="Firma Logo" style="max-width: 150px;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">gonulinsaatgebze</a>, Tüm Hakları Saklıdır.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a href="#">DynamicSoft</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

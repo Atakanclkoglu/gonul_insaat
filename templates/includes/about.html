@@ -1,0 +1,31 @@
+{% load static %}
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img">
+                    <img class="img-fluid" src="{{ about_us.image_1.url }}" alt="">
+                    <img class="img-fluid" src="{{ about_us.image_2.url }}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h4 class="section-title">{{ about_us.title }}</h4>
+                <h1 class="display-5 mb-4">{{ about_us.heading }}</h1>
+                <p>{{ about_us.description }}</p>
+                <p class="mb-4">{{ about_us.short_description }}</p>
+                <div class="d-flex align-items-center mb-5">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px;">
+                        <h1 class="display-1 mb-n2" data-toggle="counter-up">{{ about_us.years_of_experience }}</h1>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Yıllık</h3>
+                        <h3>Uzman</h3>
+                        <h3 class="mb-0">Deneyim</h3>
+                    </div>
+                </div>
+                <a class="btn btn-primary py-3 px-5" href="tel:+905325594149" >İletişime Geç</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+{%load static %}
+
+
+<div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+            <div class="h-100 d-inline-flex align-items-center py-3 me-3">
+                <a class="text-body px-2" href="tel:+905325594149"><i class="fa fa-phone-alt text-primary me-2"></i>(532)-559-4149</a>
+                <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>gonulinsaatgebze@gmail.com</a>
+            </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+            
+            <div class="h-100 d-inline-flex align-items-center">
+                {% for social in social_media_links %}
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="{{ social.url }}" target="_blank">
+                        <img src="{{ social.icon_image.url }}" alt="{{ social.name }}" style="width: 30px; height: 30px;">
+                    </a>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+</div>
