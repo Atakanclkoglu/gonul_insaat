@@ -19,5 +19,5 @@ Additionally, the hosting and domain services for the project were handled by us
 
 # Project Title
 
-TThis project is a website developed by dynamic software company for a construction company. You can visit the site here: [www.gonulinsaatgebze.com](http://www.gonulinsaatgebze.com)
+This project is a website developed by dynamic software company for a construction company. You can visit the site here: [www.gonulinsaatgebze.com](http://www.gonulinsaatgebze.com)
 
